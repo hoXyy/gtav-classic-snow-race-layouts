@@ -1,4 +1,4 @@
-import type { ExampleReplicant } from '@nodecg-vue-ts-template/types/schemas';
+import type { Timer, AllPlayers, CurrentPlayers } from '@snow-mod-race/types/schemas';
 import clone from 'clone';
 import type { ReplicantBrowser } from 'nodecg/types/browser';
 import Vue from 'vue';
@@ -8,15 +8,21 @@ import { getModule, Module, Mutation, VuexModule } from 'vuex-module-decorators'
 
 // Declaring replicants.
 export const reps: {
-  exampleReplicant: ReplicantBrowser<ExampleReplicant>;
+  timer: ReplicantBrowser<Timer>;
+  allPlayers: ReplicantBrowser<AllPlayers>;
+  currentPlayers: ReplicantBrowser<CurrentPlayers>;
   [k: string]: ReplicantBrowser<unknown>;
 } = {
-  exampleReplicant: nodecg.Replicant('exampleReplicant'),
+  timer: nodecg.Replicant('timer'),
+  allPlayers: nodecg.Replicant('allPlayers'),
+  currentPlayers: nodecg.Replicant('currentPlayers'),
 };
 
 // All the replicant types.
 export interface ReplicantTypes {
-  exampleReplicant: ExampleReplicant;
+  timer: Timer;
+  allPlayers: AllPlayers;
+  currentPlayers: CurrentPlayers;
 }
 
 @Module({ name: 'ReplicantModule', namespaced: true })

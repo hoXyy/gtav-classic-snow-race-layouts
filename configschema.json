@@ -3,11 +3,46 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "exampleProperty": {
-      "type": "string"
+    "obs": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "default": true
+        },
+        "address": {
+          "type": "string",
+          "default": "ws://localhost"
+        },
+        "port": {
+          "type": "number",
+          "default": 4455
+        },
+        "sources": {
+          "type": "object",
+          "properties": {
+            "feed1": {
+              "type": "string",
+              "default": "Player Feed 1"
+            },
+            "feed2": {
+              "type": "string",
+              "default": "Player Feed 2"
+            },
+            "feed3": {
+              "type": "string",
+              "default": "Player Feed 3"
+            },
+            "feed4": {
+              "type": "string",
+              "default": "Player Feed 4"
+            }
+          }
+        }
+      }
     }
   },
   "required": [
-    "exampleProperty"
+    "obs"
   ]
 }

@@ -6,5 +6,17 @@
  */
 
 export interface Configschema {
-	exampleProperty: string;
+	obs: {
+		enabled?: boolean;
+		address?: string;
+		port?: number;
+		sources?: {
+			feed1?: string;
+			feed2?: string;
+			feed3?: string;
+			feed4?: string;
+			[k: string]: unknown;
+		};
+		[k: string]: unknown;
+	};
 }

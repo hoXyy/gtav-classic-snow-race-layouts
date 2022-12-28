@@ -1,2 +1,4 @@
 export * from './configschema';
-export * from './exampleReplicant';
+export * from './allPlayers';
+export * from './currentPlayers';
+export * from './timer';

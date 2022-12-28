@@ -29,13 +29,13 @@
     "moduleResolution": "node",                          /* Specify how TypeScript looks up a file from a given module specifier. */
     "baseUrl": ".",                                      /* Specify the base directory to resolve non-relative module names. */
     "paths": {
-      "@nodecg-vue-ts-template/*": [
+      "@snow-mod-race/*": [
         "src/extension/*"
       ],
-      "@nodecg-vue-ts-template/types": [
+      "@snow-mod-race/types": [
         "src/types"
       ],
-      "@nodecg-vue-ts-template/types/*": [
+      "@snow-mod-race/types/*": [
         "src/types/*"
       ],
       "nodecg/*": [

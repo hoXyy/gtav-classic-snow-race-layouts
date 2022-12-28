@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "time": {
+      "type": "string",
+      "default": "00:00"
+    },
+    "milliseconds": {
+      "type": "number",
+      "default": 0
+    },
+    "timestamp": {
+      "type": "number",
+      "default": 0
+    },
+    "phase": {
+      "type": "string",
+      "default": "stopped"
+    }
+  },
+  "required": ["time", "phase", "milliseconds", "timestamp"]
+}

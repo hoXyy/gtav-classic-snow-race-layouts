@@ -1,1 +1,1 @@
-export * from './ExampleType';
+

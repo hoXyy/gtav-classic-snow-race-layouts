@@ -1,0 +1,23 @@
+@import url("./fonts/alte_bebas.css");
+	
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: white;
+  font-weight: bold;
+  font-family: 'Alte Haas Grotesk';
+}
+
+#backgrounds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+#backgrounds .bg {
+  position: absolute;
+}
