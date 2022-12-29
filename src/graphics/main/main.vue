@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="backgrounds">
-      <img class="bg" src="./snowrace.png" />
+      <img class="bg" src="./snowrace_layout.png" />
     </div>
 
     <p
