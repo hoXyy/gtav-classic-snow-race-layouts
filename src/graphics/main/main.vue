@@ -76,7 +76,7 @@
       :style="{
         position: 'absolute',
         left: '825px',
-        top: '892px',
+        top: '890px',
         width: '260px',
         height: '50px',
       }"
@@ -87,7 +87,7 @@
       :style="{
         position: 'absolute',
         left: '1470px',
-        top: '892px',
+        top: '888px',
         width: '260px',
         height: '50px',
       }"

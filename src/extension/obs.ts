@@ -23,7 +23,7 @@ if (config.enabled) {
     clearTimeout(reconnectTimeout);
     if (!connectedToOBSRep.value) {
       nodecg().log.info("Connecting to OBS...");
-      obs.connect(config.address).catch((err) => {
+      obs.connect(`${config.address}:${config.port}`).catch((err) => {
         nodecg().log.error(`Failed to connect to OBS! Reason: ${err}`);
         reconnectTimeout = setTimeout(reconnectToOBS, 5000);
       });
